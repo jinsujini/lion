@@ -1,0 +1,51 @@
+html { height: 100%;}
+body{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hd{
+    background-color: #DE7D86;
+    height: 150px;
+    width: 100%;
+    display: fixed;
+}
+section{
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec1{
+    flex: 1;
+    background-color:#FFC8DD ;
+}
+.sec1 > img{
+    width: 100%;
+    height: 100%;
+}
+.sec2{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.sec2-1, .sec2-2, .sec2-3{
+    flex: 1;
+}
+.sec2-1{
+    background-color: #FFC5C5;
+}
+.sec2-2{background-color: #FFA3A3;}
+.sec2-3{background-color: #54D8DC;}
+
+
+.ft{
+    margin-top: auto;
+    height: 150px;
+    background-color: #6E6875;
+}

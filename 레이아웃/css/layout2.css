@@ -1,0 +1,54 @@
+html { height: 100%;}
+body{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.hd1{
+    flex: 1;
+    background-color:#EEEEE9 ;
+    height: 150px;
+}
+.hd2{
+    background-color:#D6CCC2 ;
+    flex: 3;
+    height: 150px;
+}
+section{
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sec1{
+    flex: 1;
+    background-color:#F5ECE1 ;
+}
+.sec2{
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+}
+.sec2-1{
+    flex: 1;
+    background-color:#E4D6CA ;
+}
+.sec2-2{
+    flex: 1;
+    background-color:#D5BEB1 ;
+}
+
+.ft{
+    margin-top: auto;
+    height: 150px;
+    background-color: #D6CCC2;
+}
