@@ -94,7 +94,7 @@ li{
     text-shadow: 1px 0 rgb(0, 0, 0), -1px 0 black, 0 -1px black, 0 1px black;
 }
 .wagi > a, .sw > a, .lion > a{
-    color: navy;
+    color: rgb(104, 160, 205);
     font-size: larger;
 }
 .wagi > h3, .sw > h3, .lion > h3{
