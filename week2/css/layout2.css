@@ -1,0 +1,147 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 1250px;
+    height: 1080px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    display: flex;
+}
+.hd1{
+    width: 200px;
+    background-color: #EAE9EE;
+}
+.hd2{
+    width: 1080px;
+    background-color: #C2C3D6;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    height: 880px;
+    overflow: hidden;
+}
+.sc1{
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+}
+.sc2{
+    width: 300px;
+    height: 880px;
+}
+.sc1-2{
+    height: 440px;
+    flex: 1;
+}
+.sc1-1{
+    flex: 1;
+display: flex;
+flex-direction: row;}
+.left{
+    width: 250px;
+    height: 440px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.top, .bottom{
+    width: 730px;
+    height: 220px;
+}
+footer{display: flex;}
+.ft2{
+    width: 880px;
+    background-color: #6469CD;
+}
+.ft1, .ft3{
+    width: 200px;
+    height: 100px;
+    background-color: #3A258A;
+}
+.sc3{display: none;}
+@media(max-width: 680px){
+    .wrap{
+        width: 680px;
+    }
+    header{display: flex;}
+    .hd1{
+        background-color: #C2C3D6;
+        width: 240px;
+    }
+    .hd2{
+        background-color: #EAE9EE;
+        width: 200px;
+    }
+    .hd3{
+        background-color: #C2C3D6;
+        width: 240px;
+    }
+    .sc1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left,.sc3{display: none;}
+    .sc2{
+        height: 440px;
+    }
+    .ft1, .ft3{width: 106px;}
+    .ft2{width: 468px;}
+ 
+}
+@media (max-width: 450px){
+    .wrap{width: 450px;}
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .hd1,.hd2{
+        background-color: #C2C3D6;
+        width: 175px;
+    }
+    .hd3{
+        background-color: #EAE9EE;
+        width: 100px;
+    }
+    .sc1{
+        display: flex;
+        height: 440px;
+    }
+    .top, .sc2, .sc1-2{
+        display: none;
+    }
+    .left, .bottom{
+        display: flex;
+        width: 225px;
+        height: 440px;
+    }
+    .sc3{
+        display: flex;
+        flex-direction: column;
+        height: 440px;
+        width: 450px;
+        overflow: hidden;}
+    .sc3-1{
+        width: 450px;
+        height: 220px;
+        overflow: hidden;
+    }
+    .sc3-2{
+        display: flex;
+        flex-direction: row;
+    }
+    .sc3-2-1, .sc3-2-2{
+        width: 225px;
+        overflow: hidden;
+        height: 220px;
+    }
+    .ft1, .ft2, .ft3{
+        background-color: #6469CD;
+    }
+}
+

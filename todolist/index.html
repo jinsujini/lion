@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do LIST</title>
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+
+    <div class="wrap">
+        <header>
+            <h1>TO-DO LIST</h1>
+            <div class="add">
+                <input type="text" placeholder="오늘 할 일을 입력해주세요." id="input_todo">
+                <button id="addbtn"><img src="./assets/img/plus.svg" alt="plusbtn"></button>
+            </div>
+        </header>
+        <main id="main">
+            <div class="list">
+                <div class="box">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox"></label>
+                    <p>코딩 공부하기</p>
+                </div>
+                <button id="deletebtn">
+                    <img src="./assets/img/delete.svg" alt="deletebtn">
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded",() =>{
+            const InputTodo = document.getElementById("input_todo");
+            const addbtn = document.getElementById('addbtn');
+            const Main = document.getElementById('main');
+            let index = 0;
+
+            addbtn.addEventListener('click', () => {
+                if(InputTodo.value == ''){
+                    alert('내용을 입력해주세요');
+                    return;
+                }
+
+                const list = document.createElement('div');
+                list.classList.add('list');
+
+                const box = document.createElement('div');
+                box.classList.add('box');
+
+                const checkbox = document.createElement('input');
+                checkbox.setAttribute('type', 'checkbox');
+                checkbox.setAttribute('id', `checkbox${index}`);
+
+                const label = document.createElement('label');
+                label.setAttribute('for', `checkbox${index}`);
+
+                const text = document.createElement('p');
+                text.textContent = InputTodo.value;
+
+                const deletebtn = document.createElement('button');
+                deletebtn.innerHTML = `<img src="./assets/img/delete.svg" alt="deletebtn">`;
+
+                deletebtn.addEventListener('click', (event) => {
+                    event.currentTarget.parentNode.parentNode.removeChild(
+                        event.currentTarget.parentNode
+                    )  
+                });
+
+                checkbox.addEventListener('change', () =>{
+                    if(checkbox.checked){
+                        text.style.textDecoration = 'line-through';
+                    }else{
+                        text.style.textDecoration = 'none';
+                    }
+                })
+
+                box.appendChild(checkbox);
+                box.appendChild(label);
+                box.appendChild(text);
+
+                list.appendChild(box);
+                list.appendChild(deletebtn);
+
+                Main.appendChild(list);
+                InputTodo.value='';
+                index++;
+
+            });
+        })
+    </script>
+    
+</body>
+</html>
