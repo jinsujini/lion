@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: #92CAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.button_wrap {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    a {
+        font-family: 'NanumSquare', sans-serif;
+        width: inherit;
+        height: inherit;
+        background-color: #00000000;
+        border: 0;
+        font-size: 20px;
+        color: #49A1F1;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+.write_wrap {
+    max-width: 1000px;
+    width: 60vw;
+    min-height: 500px;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 60px;
+
+    input,
+    textarea {
+        outline: none;
+        font-family: 'NanumSquareNeo-Variable';
+        width: 100%;
+        border: 3px solid #92CAFF;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+
+    ::placeholder {
+        color: #49A1F1;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+        resize: none;
+        height: 370px;
+        margin-bottom: 30px;
+    }
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            width: 250px;
+            height: 65px;
+            font-size: 16px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .delete {
+            background-color: #00000000;
+            border: 3px solid #92CAFF;
+            color: #49A1F1;
+        }
+
+        .write {
+            border: 0;
+            background-color: #92CAFF;
+            color: #fff;
+        }
+    }
+}
+
+.article_wrap {
+    width: 60vw;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 50px;
+
+    .article {
+        h2 {
+            font-size: 28px;
+            color: #49A1F1;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            border-bottom: 3px solid #92CAFF;
+        }
+
+        >p {
+            color: #49A1F1;
+            height: 30vh;
+            padding: 0 10px;
+        }
+
+        >div {
+            display: flex;
+            justify-content: right;
+            border-bottom: 3px solid #92CAFF;
+            margin-bottom: 15px;
+
+            >div {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+
+                img {
+                    cursor: pointer;
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 10px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #49A1F1;
+                }
+            }
+        }
+    }
+
+    .comment {
+        display: flex;
+        justify-content: space-between;
+
+        input, button {
+            font-size: 16px;
+            border-radius: 15px;
+            font-weight: 600;
+        } 
+
+        input {
+            outline: none;
+            border: 3px solid #92CAFF;
+            padding: 10px 20px;
+            width: 90%;
+        }
+
+        ::placeholder {
+            color: #49A1F1;
+        }
+
+        button {
+            background-color: #92CAFF;
+            width: 9%;
+            color: #fff;
+            border: 0;
+        }
+    }
+}
+
+input, textarea {
+    color: #49A1F1;
+}
