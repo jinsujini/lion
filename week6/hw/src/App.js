@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import "./assets/scss/style.scss"
 
 const URL = "/1543061/abandonmentPublicSrvc/abandonmentPublic";
 
@@ -44,15 +45,17 @@ function App() {
 
     return (
         <div className="App">
-            <div className='first'>
-                <p>구조장소: {data.response.body.items.item[0].happenPlace}</p>
-                <p>종: {data.response.body.items.item[0].kindCd}</p>
-                <p>특징: {data.response.body.items.item[0].specialMark}</p>
+            <h1>유기견 현황</h1>
+
+            <div className='sec'>
+                <p>구조장소: <span>{data.response.body.items.item[0].happenPlace}</span> </p>
+                <p>종: <span>{data.response.body.items.item[0].kindCd}</span> </p>
+                <p>특징: <span>{data.response.body.items.item[0].specialMark}</span> </p>
             </div>
-            <div className='second'>
-                <p>구조장소: {data.response.body.items.item[1].happenPlace}</p>
-                <p>종: {data.response.body.items.item[1].kindCd}</p>
-                <p>특징: {data.response.body.items.item[1].specialMark}</p>
+            <div className='sec'>
+                <p>구조장소: <span>{data.response.body.items.item[1].happenPlace}</span> </p>
+                <p>종: <span>{data.response.body.items.item[1].kindCd}</span> </p>
+                <p>특징: <span>{data.response.body.items.item[1].specialMark}</span> </p>
             </div>
 
         </div>
