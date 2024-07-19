@@ -51,7 +51,11 @@ const Main = () => {
       <div className="line">
         <img src={line} alt="d"  />
       </div>
+      <div>
+        <h1> 여기에 공지사항 글이 들어갑니닥</h1>
+      </div>
     </div>
+    
   );
 };
 
